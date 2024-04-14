@@ -1,11 +1,7 @@
-import { ReactNode } from 'react';
 import { observer } from 'mobx-react-lite';
+import { PlaygroundWrapperProps } from './model';
 
 import styles from './styles.module.css';
-
-interface PlaygroundWrapperProps {
-    children: ReactNode;
-}
 
 const PlaygroundWrapper = observer(({ children }: PlaygroundWrapperProps) => {
     return (
