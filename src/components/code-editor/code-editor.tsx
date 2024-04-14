@@ -5,9 +5,12 @@ import { useStores } from '../../contexts/root-store-context';
 import { EditorRefType, OnMountType } from './model';
 
 import styles from './styles.module.css';
+import { LanguageSelector } from '../language-selector';
 
 const CodeEditor = observer(() => {
-    const { codeEditorStore: { codeEditorsValue, setCodeEditorsValueMobxAction } } = useStores();
+    const { codeEditorStore } = useStores();
+    const { codeEditorsValue, setCodeEditorsValueMobxAction } = codeEditorStore;
+
     const editorRef = useRef<EditorRefType>();
 
     const onMount = (editor: OnMountType) => {
@@ -17,7 +20,7 @@ const CodeEditor = observer(() => {
 
     return (
         <div className={styles.codeEditor}>
-            <button onClick={() => console.log(codeEditorsValue)}>button</button>
+            <LanguageSelector />
             <Editor
                 height="100%"
                 theme='vs-dark'

@@ -3,6 +3,7 @@ import { makeAutoObservable } from "mobx";
 class CodeEditorStore {
 
     codeEditorsValue = '';
+    selectedLanguage = 'javascript'
 
     constructor() {
         makeAutoObservable(this);
@@ -11,6 +12,10 @@ class CodeEditorStore {
     setCodeEditorsValueMobxAction(value: string) {
         this.codeEditorsValue = value;
     }
+
+    setSelectedLanguageMobxAction = (language: string) => {
+        this.selectedLanguage = language;
+    };
 }
 
 export default CodeEditorStore;
