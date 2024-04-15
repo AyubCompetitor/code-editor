@@ -1,0 +1,39 @@
+.language-selector-container {
+   max-width: 30%;
+   margin-bottom: 10px;
+}
+
+.language-selector__control {
+   background-color:  var(--black) !important;
+   border: none ;
+   border-radius: 5px;
+}
+
+.language-selector__value-container {
+   
+}
+
+.language-selector__option--is-focused {
+   background-color: transparent;
+}
+
+.language-selector__single-value {
+   color: var(--white) !important;
+}
+
+.language-selector__indicators {}
+
+.language-selector__menu {
+   background-color:  var(--black);
+}
+
+.language-selector__menu-list {
+   color: var(--white);
+   background-color:  var(--black);
+}
+
+.language-selector__option {
+   &:hover {
+      background-color:  var(--blue);
+   }
+}

@@ -3,8 +3,7 @@ import { useStores } from '../../contexts/root-store-context';
 import { LANGUAGE_VERSIONS } from '../../constants/language-versions';
 import Select from 'react-select'
 
-import styles from './styles.module.css';
-import { useEffect } from 'react';
+import './styles.css';
 
 const LanguageSelector = observer(() => {
     const { codeEditorStore } = useStores();
@@ -18,21 +17,17 @@ const LanguageSelector = observer(() => {
         value: lang, label: `${lang} (${version})`
     }));
 
-    useEffect(() => {
-        console.log('now selectedLanguage', selectedLanguage)
-    }, [selectedLanguage]);
-
     return (
-        <div className={styles.languageSelector}>
-            <Select
-                options={selectOptions}
-                defaultValue={selectOptions[0]}
-                value={{ label: selectedLanguage, value: selectedLanguage }}
-                onChange={option => {
-                    if (option) setSelectedLanguageMobxAction(option?.value);
-                }}
-            />
-        </div>
+        <Select
+            className="language-selector-container"
+            classNamePrefix="language-selector"
+            options={selectOptions}
+            defaultValue={selectOptions[0]}
+            value={{ label: selectedLanguage, value: selectedLanguage }}
+            onChange={option => {
+                if (option) setSelectedLanguageMobxAction(option?.value);
+            }}
+        />
     )
 });
 

@@ -4,10 +4,10 @@ import { Ecolors, ITextProps } from "./model";
 
 const Text = ({
     As = 'span',
-    color = Ecolors.black,
+    size = 20,
+    color = Ecolors.white,
     bold = false,
     children,
-    size = 12,
 }: ITextProps) => {
     const classes = classNames(
         styles[`s${size}`],

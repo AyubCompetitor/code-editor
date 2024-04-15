@@ -9,7 +9,7 @@ class CodeEditorStore {
         makeAutoObservable(this);
     }
 
-    setCodeEditorsValueMobxAction(value: string) {
+    setCodeEditorsValueMobxAction = (value: string) => {
         this.codeEditorsValue = value;
     }
 
