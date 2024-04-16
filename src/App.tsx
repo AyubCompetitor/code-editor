@@ -1,9 +1,10 @@
-import './App.css'
-import CodeEditor from './components/code-editor/code-editor';
-import PlaygroundWrapper from './components/playground-wrapper/playground-wrapper';
-import RootStore from './stores/root-store'
+import { PlaygroundWrapper } from './components/widgets/playground-wrapper';
 import { RootStoreContext } from './contexts/root-store-context';
-import { Output } from './components/output';
+import { Output } from './components/widgets/output';
+import { CodeEditor } from './components/widgets/code-editor';
+import RootStore from './stores/root-store'
+
+import './App.css'
 
 function App() {
   const rootStore = new RootStore();

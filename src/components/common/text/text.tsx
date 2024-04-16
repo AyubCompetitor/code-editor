@@ -5,7 +5,7 @@ import { Ecolors, ITextProps } from "./model";
 const Text = ({
     As = 'span',
     size = 20,
-    color = Ecolors.white,
+    color = Ecolors.default,
     bold = false,
     children,
 }: ITextProps) => {

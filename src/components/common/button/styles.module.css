@@ -1,0 +1,23 @@
+.customButton {
+    background-color: transparent; /* Green */
+    color: var(--blue2); 
+    border: 1px solid var(--blue2);
+    border-radius: 5px;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+    &:hover {
+       background-color: var(--blue2);
+       color: var(--white);
+    }
+ 
+    &:active {
+       transform: translateY(4px);
+    }
+ }

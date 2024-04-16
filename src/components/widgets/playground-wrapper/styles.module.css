@@ -1,0 +1,16 @@
+.playgroundWrapper {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   min-height: 100vh;
+   padding: 10px;
+   overflow: hidden;
+}
+
+.playgroundWrapperDarkTheme {
+   background-color: var(--bg-color);
+}
+
+.playgroundWrapperLigthTheme {
+   background-color: var(--bg-color-light);
+}

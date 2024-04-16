@@ -1,8 +1,5 @@
 :root {
-    --bg-color: #282c34;
-    --black:          #333333;
-    --orange:         #CC6633;
-    --yellow:          #A4CC33;
+
     --whiteLightness: 100%;
     --white:          hsl(0, 0%, var(--whiteLightness));
     --grayF4:         hsl(0, 0%, calc(var(--whiteLightness) - 4%));
@@ -12,7 +9,16 @@
     --greyC4:         hsl(0, 0%, calc(var(--whiteLightness) - 23%));
     --grey99:         hsl(0, 0%, calc(var(--whiteLightness) - 40%));
     --grey66:         hsl(0, 0%, calc(var(--whiteLightness) - 60%));
-    --blue:          #2684FF;
+    --bg-color: #282c34;
+    --bg-color-light: #ffffffb3;
+    --text-color: #e2e4e9d1;
+    --border: #C0C0C0;
+    --black:          #333333;
+    --orange:         #CC6633;
+    --yellow:          #A4CC33;
+    --blue:          #0053c1;
+    --blue2:          #2094F3;
+    --pink:          #f50056;
     --green:          #04AA6D;   
     --white:          #fff;   
   }

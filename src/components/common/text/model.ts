@@ -9,6 +9,7 @@ export enum Ecolors {
     greyC4 = 'greyC4',
     grey99 = 'grey99',
     grey66 = 'grey66',
+    default = 'default',
 }
 
 export type Tsizes = 28 | 20 | 16 | 14 | 12 | 10;

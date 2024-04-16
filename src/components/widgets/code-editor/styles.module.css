@@ -1,0 +1,32 @@
+.codeEditorWrapper {
+   height: 100%;
+   width: 60%;
+   max-width: 70%;
+   padding: 15px;
+}
+
+.editorHeader {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 14px;
+}
+
+.codeEditor {
+   height: calc(100vh - 100px);
+}
+
+.codeEditorLight {
+   height: calc(100vh - 100px);
+   border-right: 1px solid var(--text-color);
+   border-bottom: 1px solid var(--text-color);
+}
+
+.languageSelectorDark {
+   background-color: var(--bg-color);
+}
+
+.languageSelectorLight {
+   background-color: var(--white);
+}

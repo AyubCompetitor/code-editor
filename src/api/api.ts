@@ -1,14 +1,21 @@
 import axios from "axios";
-import { LANGUAGE_VERSIONS } from "../constants/language-versions";
+interface Runtimes {
+    [key: string]: string;
+}
 
 const API = axios.create({
     baseURL: "https://emkc.org/api/v2/piston",
 });
 
-export const executeCode = async (language: string, sourceCode: string) => {
+export const getRuntimes = async () => {
+    const response = await API.get("/runtimes");
+    return response.data;
+};
+
+export const executeCode = async (language: string, sourceCode: string, runtimes: Runtimes) => {
     const response = await API.post("/execute", {
         language: language,
-        version: LANGUAGE_VERSIONS[language as keyof typeof LANGUAGE_VERSIONS],
+        version: runtimes[language],
         files: [
             {
                 content: sourceCode,

@@ -68,6 +68,10 @@
     color: var(--grey66);
 }
 
+.default {
+    color: var(--text-color)
+}
+
 .upperCase {
     text-transform: uppercase;
 }
