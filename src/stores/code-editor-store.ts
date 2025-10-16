@@ -3,7 +3,7 @@ import { makeAutoObservable } from "mobx";
 class CodeEditorStore {
 
     codeEditorsValue = '';
-    selectedLanguage = 'javascript'
+    selectedLanguage = 'python'
 
     constructor() {
         makeAutoObservable(this);
