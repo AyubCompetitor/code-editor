@@ -2,7 +2,7 @@ import { makeAutoObservable } from "mobx";
 
 class ThemesStore {
 
-    isDarkMode = false;
+    isDarkMode = true;
 
     constructor() {
         makeAutoObservable(this);

@@ -36,7 +36,7 @@ const CodeEditor = observer(() => {
                 theme={isDarkMode ? 'vs-dark' : 'light'}
                 defaultLanguage={selectedLanguage}
                 language={selectedLanguage}
-                defaultValue="# Начните писать ваш код здесь"
+                defaultValue="# гоу кодить"
                 value={codeEditorsValue}
                 onChange={setCodeEditorsValueMobxAction}
                 onMount={onMount}
