@@ -38,7 +38,7 @@ const CodeEditor = observer(() => {
                 language={selectedLanguage}
                 defaultValue="// Начните писать ваш код здесь"
                 value={codeEditorsValue}
-                onChange={(value) => setCodeEditorsValueMobxAction(value as string)}
+                onChange={setCodeEditorsValueMobxAction}
                 onMount={onMount}
             />
         </div >

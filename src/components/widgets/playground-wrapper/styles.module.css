@@ -14,3 +14,9 @@
 .playgroundWrapperLigthTheme {
    background-color: var(--bg-color-light);
 }
+
+@media (max-width: 768px) {
+   .playgroundWrapper {
+      flex-direction: column;
+   }
+}

@@ -9,8 +9,8 @@ class CodeEditorStore {
         makeAutoObservable(this);
     }
 
-    setCodeEditorsValueMobxAction = (value: string) => {
-        this.codeEditorsValue = value;
+    setCodeEditorsValueMobxAction = (value: unknown) => {
+        this.codeEditorsValue = typeof value === 'string' ? value : String(value);
     }
 
     setSelectedLanguageMobxAction = (language: string) => {

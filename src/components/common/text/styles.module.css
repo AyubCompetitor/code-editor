@@ -75,3 +75,11 @@
 .upperCase {
     text-transform: uppercase;
 }
+
+
+@media (max-width: 768px) {
+    .s20 {
+        font-size: 16px;
+        line-height: 19px; 
+    }
+}
